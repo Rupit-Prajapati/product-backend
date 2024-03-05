@@ -28,7 +28,7 @@ function verifyToken(req, res, next) {
   }
 }
 
-// route.use(verifyToken)
+route.use(verifyToken)
 
 app.post('/register', async (req, res) => {
   let data = new User(req.body)
